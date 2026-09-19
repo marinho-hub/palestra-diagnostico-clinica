@@ -25,7 +25,7 @@ a { color:inherit; }
 .brand b { color:var(--wine); font-style:italic; }
 .ty-wrap { min-height:100vh; display:flex; align-items:center; padding:40px 0 60px; }
 .ty-hero { max-width:640px; margin:0 auto 18px; border-radius:24px; overflow:hidden; box-shadow:var(--shadow); aspect-ratio:16/9; background:var(--ink); }
-.ty-hero img { width:100%; height:100%; object-fit:cover; object-position:50% 14%; display:block; }
+.ty-hero img { width:100%; height:100%; object-fit:cover; object-position:60% 30%; display:block; }
 .ty-card { background:var(--card); border:1px solid var(--line); border-radius:28px; box-shadow:var(--shadow); padding:44px 34px; max-width:640px; margin:0 auto; text-align:center; }
 .ty-check { width:62px; height:62px; border-radius:50%; background:var(--wine); color:#fff; display:flex; align-items:center; justify-content:center; margin:0 auto 18px; font-size:28px; }
 .ty-card h1 { font-size:30px; margin-bottom:10px; }
@@ -33,7 +33,8 @@ a { color:inherit; }
 .ty-actions { display:grid; gap:12px; text-align:left; }
 .ty-action { display:flex; align-items:center; gap:14px; border:1.5px solid var(--line); border-radius:16px; padding:16px 18px; text-decoration:none; color:var(--ink); transition:border-color .15s ease,transform .15s ease; }
 .ty-action:hover { border-color:var(--gold); transform:translateY(-1px); }
-.ty-action .ico { width:42px; height:42px; border-radius:12px; background:var(--cream-soft); display:flex; align-items:center; justify-content:center; font-size:19px; flex-shrink:0; }
+.ty-action .ico { width:42px; height:42px; border-radius:12px; background:var(--cream-soft); display:flex; align-items:center; justify-content:center; font-size:19px; flex-shrink:0; overflow:hidden; }
+.ty-action .ico img { width:100%; height:100%; object-fit:cover; }
 .ty-action.primary { background:var(--wine); border-color:var(--wine); color:#fff; }
 .ty-action.primary .ico { background:rgba(255,255,255,.15); }
 .ty-action .txt b { display:block; font-size:15px; }
@@ -53,7 +54,7 @@ a { color:inherit; }
 <div class="ty-wrap">
   <div class="container">
     <div class="ty-hero">
-      <img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/obrigado-hero.jpg" alt="Boladona Marketing">
+      <img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/obrigado-hero-v2.png" alt="Boladona Marketing">
     </div>
     <div class="ty-card">
       <div class="ty-check">✓</div>
@@ -64,17 +65,17 @@ a { color:inherit; }
 
       <div class="ty-actions">
         <a class="ty-action primary" href="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/kit-ia-trafego-pago-negocios-de-beleza.pdf" download target="_blank" rel="noopener">
-          <div class="ico">🎁</div>
+          <div class="ico"><img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/mockup-kit-real.jpg" alt=""></div>
           <div class="txt"><b>Baixar meu Kit IA + Tráfego Pago</b><span>PDF exclusivo para negócios de beleza, grátis</span></div>
         </a>
 
         <a class="ty-action" href="https://chat.whatsapp.com/HSucHXEHyy54WU0SWMf57K" target="_blank" rel="noopener">
-          <div class="ico">💬</div>
+          <div class="ico"><img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/mockup-comunidade-real.jpg" alt=""></div>
           <div class="txt"><b>Entrar na Comunidade Boladona</b><span>Grupo de WhatsApp com donas de clínica de todo o Brasil</span></div>
         </a>
 
         <a class="ty-action" href="https://calendar.app.google/vNHCQ6THHhWF8XZ88" id="agendarLink" target="_blank" rel="noopener">
-          <div class="ico">📅</div>
+          <div class="ico"><img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/mockup-diagnostico-real.jpg" alt=""></div>
           <div class="txt"><b>Agendar minha conversa</b><span>Prefere já marcar um horário? Escolha o melhor dia pra você</span></div>
         </a>
       </div>
