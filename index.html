@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diagnóstico Gratuito · Palestra com Pedro & Thay Marinho</title>
+<meta name="description" content="Palestra ao vivo de Pedro & Thay Marinho. Cadastre-se, leve seu Kit de IA + Tráfego Pago para Negócios de Beleza e concorra a um Diagnóstico Gratuito da sua clínica.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand"><b>Boladona</b> Marketing</div>
+    <div class="live-badge"><span class="live-dot"></span> Palestra ao vivo · Segunda-feira</div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="container hero-grid">
+
+    <div class="photo-card">
+      <div class="photo-arc"></div>
+      <img src="assets/img/pedro-thay-casal.jpg" alt="Pedro e Thay Marinho">
+      <div class="photo-caption">
+        <div class="names">Pedro &amp; Thay Marinho</div>
+        <div class="role">Estratégia + IA · Posicionamento &amp; Comercial Magnético</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="eyebrow">Vaga gratuita para a palestra de segunda</div>
+      <h1>Descubra onde a sua clínica está <em>perdendo faturamento</em> — e como sair da correria para virar a CEO da sua marca</h1>
+      <p class="hero-sub">Cadastre-se agora e garanta, na hora, o <strong>Kit de IA + Tráfego Pago para Negócios de Beleza</strong>. As 10 primeiras inscritas ainda concorrem a um <strong>Diagnóstico Gratuito ao vivo</strong> com Pedro &amp; Thay na segunda-feira.</p>
+
+      <div class="urgency">🚨 Restam poucas vagas de Diagnóstico Gratuito — apenas as 10 primeiras inscritas</div>
+
+      <div class="form-card">
+        <h3>Garanta sua vaga e seu presente</h3>
+        <p class="form-note">Leva menos de 1 minuto. Suas respostas nos ajudam a te chamar certo na segunda.</p>
+
+        <div class="form-error" id="formError">Ops, não conseguimos enviar. Confira os campos e tente de novo.</div>
+
+        <form id="leadForm">
+          <div class="field">
+            <label for="nome">Seu nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar" required>
+          </div>
+          <div class="field">
+            <label for="whatsapp">WhatsApp (com DDD)</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 91234-5678" required>
+          </div>
+          <div class="field">
+            <label for="instagram">Instagram da clínica ou pessoal</label>
+            <input type="text" id="instagram" name="instagram" placeholder="@seuinstagram" required>
+          </div>
+          <div class="field">
+            <label for="dor">Qual a maior dor da sua clínica hoje?</label>
+            <select id="dor" name="dor" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="Não sei precificar sem dar desconto">Não sei precificar sem dar desconto</option>
+              <option value="Recebo leads no WhatsApp mas não converto em agendamento">Recebo leads no WhatsApp mas não converto em agendamento</option>
+              <option value="Trabalho muito e fatura pouco">Trabalho muito e fatura pouco</option>
+              <option value="Ainda não tenho um posicionamento claro">Ainda não tenho um posicionamento claro</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">Quero meu presente e minha vaga</button>
+          <div class="form-fineprint">Zero spam. Seus dados são usados só para te chamar sobre a palestra.</div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<div class="pills container">
+  <div class="pill"><b>Posicionamento</b> de elite</div>
+  <div class="pill"><b>Comercial</b> magnético</div>
+  <div class="pill"><b>Fechamento</b> no Pix</div>
+  <div class="pill"><b>Ticket alto</b>, sem desconto</div>
+</div>
+<p class="trust">+ de <b>mil mulheres</b> já transformaram sua autoridade em resultados reais com a Thay</p>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">O que você leva ao se cadastrar</h2>
+    <p class="section-sub">Três coisas, sem enrolação — pensadas pra quem ama o que faz mas não tem tempo pra ficar rodando atrás de fórmula pronta.</p>
+    <div class="cards3">
+      <div class="gift-card">
+        <div class="num">1</div>
+        <h3>Kit IA + Tráfego Pago</h3>
+        <p>Material exclusivo para negócios de beleza: como usar inteligência artificial e tráfego pago para atrair a cliente certa, sem virar refém do "achei caro".</p>
+      </div>
+      <div class="gift-card">
+        <div class="num">2</div>
+        <h3>Diagnóstico Gratuito</h3>
+        <p>As 10 primeiras inscritas concorrem a um diagnóstico ao vivo da própria clínica com Pedro &amp; Thay, direto na segunda-feira.</p>
+      </div>
+      <div class="gift-card">
+        <div class="num">3</div>
+        <h3>Comunidade Boladona</h3>
+        <p>Convite para a comunidade de donas de clínica que já estão saindo do achismo e cobrando o que valem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Pedro &amp; Thay Marinho · <a href="https://www.instagram.com/boladonadomarketing/" target="_blank" rel="noopener">@boladonadomarketing</a></p>
+    <p>© 2026 Boladona Marketing — Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="assets/lead-form.js"></script>
+</body>
+</html>
