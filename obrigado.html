@@ -40,7 +40,9 @@ a { color:inherit; }
 .ty-action .txt b { display:block; font-size:15px; }
 .ty-action .txt span { font-size:13px; opacity:.75; }
 .ty-note { margin-top:26px; font-size:12.5px; color:var(--ink-soft); border-top:1px dashed var(--line); padding-top:18px; }
-.kit-mockup-img { width:100%; max-width:340px; margin:2px auto 22px; border-radius:16px; box-shadow:var(--shadow); display:block; }
+.agenda-mockup-img { width:100%; max-width:340px; margin:2px auto 22px; border-radius:16px; box-shadow:var(--shadow); display:block; }
+.back-link { display:inline-flex; align-items:center; gap:6px; margin:0 auto 22px; font-size:13.5px; font-weight:600; color:var(--wine); text-decoration:none; }
+.back-link-wrap { text-align:center; }
 </style>
 </head>
 <body>
@@ -56,15 +58,23 @@ a { color:inherit; }
     <div class="ty-hero">
       <img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/obrigado-hero-v2.png" alt="Boladona Marketing">
     </div>
+    <div class="back-link-wrap">
+      <a class="back-link" href="/">← Voltar para o cadastro</a>
+    </div>
     <div class="ty-card">
       <div class="ty-check">✓</div>
       <h1 id="tyTitle">Inscrição confirmada!</h1>
       <p class="lead">Recebemos seu cadastro! Já separamos o seu presente e os próximos passos abaixo.</p>
 
-      <img class="kit-mockup-img" src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/mockup-kit-real.jpg" alt="Mockup do Kit IA + Tráfego Pago em laptop, tablet e celular">
+      <img class="agenda-mockup-img" src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/mockup-diagnostico-real.jpg" alt="Mockup da agenda do Diagnóstico Gratuito em laptop, tablet e celular">
 
       <div class="ty-actions">
-        <a class="ty-action primary" href="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/kit-ia-trafego-pago-negocios-de-beleza.pdf" download target="_blank" rel="noopener">
+        <a class="ty-action primary" href="https://calendar.app.google/vNHCQ6THHhWF8XZ88" id="agendarLink" target="_blank" rel="noopener">
+          <div class="ico"><img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/mockup-diagnostico-real.jpg" alt=""></div>
+          <div class="txt"><b>Agendar minha conversa com a Thay</b><span>Escolha o melhor dia e horário na agenda dela</span></div>
+        </a>
+
+        <a class="ty-action" href="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/kit-ia-trafego-pago-negocios-de-beleza.pdf" download target="_blank" rel="noopener">
           <div class="ico"><img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/mockup-kit-real.jpg" alt=""></div>
           <div class="txt"><b>Baixar meu Kit IA + Tráfego Pago</b><span>PDF exclusivo para negócios de beleza, grátis</span></div>
         </a>
@@ -72,11 +82,6 @@ a { color:inherit; }
         <a class="ty-action" href="https://chat.whatsapp.com/HSucHXEHyy54WU0SWMf57K" target="_blank" rel="noopener">
           <div class="ico"><img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/mockup-comunidade-real.jpg" alt=""></div>
           <div class="txt"><b>Entrar na Comunidade Boladona</b><span>Grupo de WhatsApp com donas de clínica de todo o Brasil</span></div>
-        </a>
-
-        <a class="ty-action" href="https://calendar.app.google/vNHCQ6THHhWF8XZ88" id="agendarLink" target="_blank" rel="noopener">
-          <div class="ico"><img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/mockup-diagnostico-real.jpg" alt=""></div>
-          <div class="txt"><b>Agendar minha conversa</b><span>Prefere já marcar um horário? Escolha o melhor dia pra você</span></div>
         </a>
       </div>
 
