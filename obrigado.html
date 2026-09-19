@@ -8,7 +8,36 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+<style>
+:root {
+  --cream: #F5F0E6; --cream-soft: #EFE7D8; --card: #FFFDF9; --ink: #211B17; --ink-soft: #4A4038;
+  --gold: #B8905A; --gold-light: #D9BA85; --wine: #7A2033;
+  --line: rgba(33,27,23,.12); --shadow: 0 20px 50px -20px rgba(33,27,23,.35); --radius: 22px;
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--cream); color:var(--ink); font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; -webkit-font-smoothing:antialiased; line-height:1.5; }
+h1 { font-family:'Playfair Display',Georgia,serif; font-weight:600; margin:0; color:var(--ink); }
+a { color:inherit; }
+.container { max-width:1120px; margin:0 auto; padding:0 20px; }
+.topbar { position:sticky; top:0; z-index:40; background:rgba(245,240,230,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+.topbar-inner { display:flex; align-items:center; justify-content:space-between; padding:14px 20px; max-width:1120px; margin:0 auto; }
+.brand { font-family:'Playfair Display',serif; font-size:19px; }
+.brand b { color:var(--wine); font-style:italic; }
+.ty-wrap { min-height:100vh; display:flex; align-items:center; padding:40px 0 60px; }
+.ty-card { background:var(--card); border:1px solid var(--line); border-radius:28px; box-shadow:var(--shadow); padding:44px 34px; max-width:640px; margin:0 auto; text-align:center; }
+.ty-check { width:62px; height:62px; border-radius:50%; background:var(--wine); color:#fff; display:flex; align-items:center; justify-content:center; margin:0 auto 18px; font-size:28px; }
+.ty-card h1 { font-size:30px; margin-bottom:10px; }
+.ty-card .lead { color:var(--ink-soft); font-size:15.5px; margin-bottom:30px; }
+.ty-actions { display:grid; gap:12px; text-align:left; }
+.ty-action { display:flex; align-items:center; gap:14px; border:1.5px solid var(--line); border-radius:16px; padding:16px 18px; text-decoration:none; color:var(--ink); transition:border-color .15s ease,transform .15s ease; }
+.ty-action:hover { border-color:var(--gold); transform:translateY(-1px); }
+.ty-action .ico { width:42px; height:42px; border-radius:12px; background:var(--cream-soft); display:flex; align-items:center; justify-content:center; font-size:19px; flex-shrink:0; }
+.ty-action.primary { background:var(--wine); border-color:var(--wine); color:#fff; }
+.ty-action.primary .ico { background:rgba(255,255,255,.15); }
+.ty-action .txt b { display:block; font-size:15px; }
+.ty-action .txt span { font-size:13px; opacity:.75; }
+.ty-note { margin-top:26px; font-size:12.5px; color:var(--ink-soft); border-top:1px dashed var(--line); padding-top:18px; }
+</style>
 </head>
 <body>
 
@@ -26,7 +55,7 @@
       <p class="lead">Anota aí: <strong>segunda-feira</strong> é a nossa palestra ao vivo. Enquanto isso, já separamos o seu presente e os próximos passos abaixo.</p>
 
       <div class="ty-actions">
-        <a class="ty-action primary" href="assets/kit-ia-trafego-pago-negocios-de-beleza.pdf" download>
+        <a class="ty-action primary" href="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/kit-ia-trafego-pago-negocios-de-beleza.pdf" download target="_blank" rel="noopener">
           <div class="ico">🎁</div>
           <div class="txt"><b>Baixar meu Kit IA + Tráfego Pago</b><span>PDF exclusivo para negócios de beleza — grátis</span></div>
         </a>
@@ -36,9 +65,9 @@
           <div class="txt"><b>Entrar na Comunidade Boladona</b><span>Grupo de WhatsApp com donas de clínica de todo o Brasil</span></div>
         </a>
 
-        <a class="ty-action" href="#" id="agendarLink" target="_blank" rel="noopener">
+        <a class="ty-action" href="https://chat.whatsapp.com/HSucHXEHyy54WU0SWMf57K" id="agendarLink" target="_blank" rel="noopener">
           <div class="ico">📅</div>
-          <div class="txt"><b>Agendar minha conversa</b><span>Prefere já marcar um horário? Escolha o melhor dia pra você</span></div>
+          <div class="txt"><b>Agendar minha conversa</b><span>Prefere já marcar um horário? Fale com a gente pelo WhatsApp</span></div>
         </a>
       </div>
 
@@ -54,15 +83,6 @@
       document.getElementById('tyTitle').textContent = 'Inscrição confirmada, ' + nome.split(' ')[0] + '!';
     }
   } catch (e) {}
-
-  // TODO(Pedro/Thay): troque "#" pelo link real de agendamento (Calendly/cal.com) assim que tiverem um.
-  var agendar = document.getElementById('agendarLink');
-  agendar.addEventListener('click', function (e) {
-    if (agendar.getAttribute('href') === '#') {
-      e.preventDefault();
-      window.open('https://chat.whatsapp.com/HSucHXEHyy54WU0SWMf57K', '_blank');
-    }
-  });
 </script>
 </body>
 </html>
