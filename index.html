@@ -71,6 +71,19 @@ a { color:inherit; } img { max-width:100%; display:block; }
 .gift-card .num { width:34px; height:34px; border-radius:50%; background:var(--ink); color:var(--gold-light); display:flex; align-items:center; justify-content:center; font-family:'Playfair Display',serif; font-size:15px; margin-bottom:14px; }
 .gift-card h3 { font-size:18px; margin-bottom:8px; }
 .gift-card p { font-size:14px; color:var(--ink-soft); margin:0; }
+.kit-mockup { position:relative; width:120px; height:150px; margin:0 auto 16px; }
+.kit-book { position:absolute; left:50%; top:50%; width:94px; height:126px; border-radius:6px 10px 10px 6px; box-shadow:0 14px 24px -10px rgba(33,27,23,.45); }
+.kit-book-3 { z-index:1; background:linear-gradient(135deg,#D9BA85,#B8905A); transform:translate(-50%,-50%) rotate(-11deg) translate(-16px,5px); }
+.kit-book-2 { z-index:2; background:linear-gradient(135deg,#9C3049,#7A2033); transform:translate(-50%,-50%) rotate(-2deg) translate(-4px,-2px); }
+.kit-book-1 { z-index:3; background:linear-gradient(135deg,#7A2033,#43121D); transform:translate(-50%,-50%) rotate(7deg) translate(9px,-6px); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; color:#F3D9C9; padding:10px; }
+.kit-book-1::before { content:""; position:absolute; left:6px; top:7px; bottom:7px; width:5px; background:repeating-linear-gradient(rgba(255,255,255,0) 0,rgba(255,255,255,0) 1px,rgba(255,255,255,.35) 1px,rgba(255,255,255,.35) 2px); border-radius:3px; }
+.kit-book-tag { font-family:'Playfair Display',serif; font-size:9.5px; letter-spacing:.16em; opacity:.85; }
+.kit-book-title { font-family:'Playfair Display',serif; font-weight:700; font-size:13px; line-height:1.25; margin-top:4px; }
+.proof { padding:8px 0 4px; }
+.proof-grid { display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:12px; }
+.proof-grid img { width:100%; height:220px; object-fit:cover; border-radius:16px; box-shadow:var(--shadow); }
+@media (max-width:720px) { .proof-grid { grid-template-columns:1fr 1fr; } .proof-grid img { height:170px; } .proof-grid img:first-child { grid-column:1 / -1; height:200px; } }
+.proof-caption { text-align:center; max-width:64ch; margin:18px auto 0; color:var(--ink-soft); font-size:14.5px; }
 footer { border-top:1px solid var(--line); padding:26px 0 40px; text-align:center; color:var(--ink-soft); font-size:13px; }
 footer a { color:var(--wine); font-weight:600; text-decoration:none; }
 </style>
@@ -144,13 +157,31 @@ footer a { color:var(--wine); font-weight:600; text-decoration:none; }
 </div>
 <p class="trust">+ de <b>mil mulheres</b> já transformaram sua autoridade em resultados reais com a Thay</p>
 
+<section class="proof">
+  <div class="container">
+    <div class="proof-grid">
+      <img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/thay-plateia-bambu.jpg" alt="Thay Marinho cantando e engajando uma sala lotada de empresárias">
+      <img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/thay-mentoradas.jpg" alt="Thay Marinho com mentoradas no evento Boladona Empresária">
+      <img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/thay-plateia-selfie.jpg" alt="Plateia lotada tirando selfie com a Thay Marinho">
+    </div>
+    <p class="proof-caption">Thay já subiu ao palco pra mesa lotada de donas de clínica e negócios de beleza por todo o Brasil — sala cheia, plateia em pé, mulheres que saíram de lá com posicionamento e comercial de outro nível.</p>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <h2 class="section-title">O que você leva ao se cadastrar</h2>
     <p class="section-sub">Três coisas, sem enrolação — pensadas pra quem ama o que faz mas não tem tempo pra ficar rodando atrás de fórmula pronta.</p>
     <div class="cards3">
       <div class="gift-card">
-        <div class="num">1</div>
+        <div class="kit-mockup" aria-hidden="true">
+          <div class="kit-book kit-book-3"></div>
+          <div class="kit-book kit-book-2"></div>
+          <div class="kit-book kit-book-1">
+            <span class="kit-book-tag">KIT</span>
+            <span class="kit-book-title">IA + Tráfego<br>Pago</span>
+          </div>
+        </div>
         <h3>Kit IA + Tráfego Pago</h3>
         <p>Material exclusivo para negócios de beleza: como usar inteligência artificial e tráfego pago para atrair a cliente certa, sem virar refém do "achei caro".</p>
       </div>
