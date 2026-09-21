@@ -25,16 +25,11 @@ a { color:inherit; } img { max-width:100%; display:block; }
 .brand { font-family:'Playfair Display',serif; font-size:19px; }
 .brand b { color:var(--wine); font-style:italic; }
 .live-badge { display:inline-flex; align-items:center; gap:8px; background:var(--ink); color:var(--cream); padding:8px 14px; border-radius:999px; font-size:12.5px; font-weight:600; letter-spacing:.03em; }
-.hero { padding:44px 0 30px; }
-.hero-grid { display:grid; grid-template-columns:.95fr 1.05fr; gap:44px; align-items:center; }
+.hero { padding:28px 0 30px; }
+.hero-banner { border-radius:24px; overflow:hidden; box-shadow:var(--shadow); margin-bottom:32px; background:var(--ink); }
+.hero-banner img { width:100%; height:auto; display:block; }
+.hero-grid { display:grid; grid-template-columns:1.15fr .85fr; gap:44px; align-items:start; }
 @media (max-width:880px) { .hero-grid { grid-template-columns:1fr; gap:30px; } }
-.photo-card { position:relative; border-radius:28px; overflow:hidden; box-shadow:var(--shadow); aspect-ratio:3/4; max-height:560px; background:var(--ink); }
-.photo-card img { width:100%; height:100%; object-fit:cover; object-position:50% 12%; }
-.photo-card::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(33,27,23,0) 45%,rgba(33,27,23,.75) 100%); }
-.photo-caption { position:absolute; left:22px; right:22px; bottom:18px; z-index:2; color:#fff; }
-.photo-caption .names { font-family:'Playfair Display',serif; font-size:22px; }
-.photo-caption .role { font-size:13px; opacity:.85; margin-top:2px; }
-.photo-arc { position:absolute; top:-40px; right:-60px; width:220px; height:220px; border:22px solid var(--gold-light); border-radius:50%; opacity:.55; z-index:1; }
 .eyebrow { display:inline-flex; align-items:center; gap:8px; color:var(--wine); font-weight:700; font-size:13px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:14px; }
 .eyebrow::before { content:""; width:22px; height:2px; background:var(--wine); display:inline-block; }
 .hero h1 { font-size:40px; line-height:1.12; letter-spacing:-0.01em; }
@@ -42,8 +37,6 @@ a { color:inherit; } img { max-width:100%; display:block; }
 @media (max-width:480px) { .hero h1 { font-size:30px; } }
 .hero-sub { margin-top:16px; font-size:16.5px; color:var(--ink-soft); max-width:54ch; }
 .urgency { margin-top:18px; display:inline-flex; align-items:center; gap:10px; background:#2C1116; color:#F3D9C9; border:1px solid rgba(243,217,201,.25); padding:10px 16px; border-radius:12px; font-size:13.5px; font-weight:600; }
-.kit-photo { margin-top:22px; border-radius:18px; overflow:hidden; box-shadow:var(--shadow); }
-.kit-photo img { width:100%; display:block; }
 .form-card { margin-top:20px; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:26px; box-shadow:var(--shadow); }
 .form-card h3 { font-size:19px; margin-bottom:4px; }
 .form-card .form-note { font-size:13.5px; color:var(--ink-soft); margin-bottom:18px; }
@@ -92,26 +85,20 @@ footer a { color:var(--wine); font-weight:600; text-decoration:none; }
 </div>
 
 <header class="hero">
-  <div class="container hero-grid">
-    <div class="photo-card">
-      <div class="photo-arc"></div>
-      <img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/pedro-thay-casal.jpg" alt="Pedro e Thay Marinho">
-      <div class="photo-caption">
-        <div class="names">Pedro &amp; Thay Marinho</div>
-        <div class="role">Estratégia + IA · Posicionamento &amp; Comercial Magnético</div>
-      </div>
+  <div class="container">
+    <div class="hero-banner">
+      <img src="https://raw.githubusercontent.com/marinho-hub/palestra-diagnostico-clinica/claude/validate-contact-storage-q4dyjl/assets/hero-kit-ia-trafego-banner.jpg" alt="Kit de IA + Tráfego Pago para Negócios de Beleza — Pedro e Thay Marinho">
     </div>
-
+  </div>
+  <div class="container hero-grid">
     <div>
       <div class="eyebrow">Presente exclusivo · Palestra Beleza em Foco</div>
       <h1>Descubra onde a sua clínica está <em>perdendo faturamento</em> e como sair da correria para virar a CEO da sua marca</h1>
       <p class="hero-sub">Cadastre-se agora e garanta, na hora, o <strong>Kit de IA + Tráfego Pago para Negócios de Beleza</strong>. As 10 primeiras inscritas ainda concorrem a um <strong>Diagnóstico Gratuito</strong> da própria clínica com Pedro &amp; Thay.</p>
       <div class="urgency">🚨 Diagnóstico Gratuito: vagas limitadas às 10 primeiras inscritas</div>
+    </div>
 
-      <div class="kit-photo">
-        <img src="https://qdgpsgfivrbxqoopowkg.supabase.co/storage/v1/object/public/landing-assets/kit-mockup-foto.jpg" alt="Kit IA + Tráfego Pago para Negócios de Beleza, guias impressos e app no celular e tablet">
-      </div>
-
+    <div>
       <div class="form-card">
         <h3>Garanta sua vaga e seu presente</h3>
         <p class="form-note">Leva menos de 1 minuto. Suas respostas nos ajudam a te chamar certo depois.</p>
